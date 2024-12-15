@@ -1,4 +1,4 @@
-const { Card } = require("../interfaces/Card");
+import { Card } from "../interfaces/Card";
 const { transfer } = require("../services/card-actions")
 
 beforeEach(() => {
@@ -14,7 +14,7 @@ beforeEach(() => {
 });
 
 test('Transfer test', () => {
-  const testCard: typeof Card = {
+  const testCard: Card = {
     balance: 1000,
     history: [],
   };
