@@ -1,7 +1,7 @@
 "use client";
 
 import { Card } from "@/interfaces/Card";
-import { CardContextType } from "@/interfaces/card-contex";
+import { CardContextType } from "@/interfaces/card-context";
 import { createContext, useContext, useEffect, useState } from "react";
 
 const CardContext = createContext<CardContextType | undefined>(undefined);
